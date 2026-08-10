@@ -1,0 +1,240 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: niimbotlabels\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-11 00:00+0000\n"
+"PO-Revision-Date: 2026-08-11 00:00+0000\n"
+"Last-Translator: L. Berthaud, Claude (Anthropic)\n"
+"Language-Team: French\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "%d ligne(s) au total, %d affichée(s) ci-dessous."
+msgstr "%d ligne(s) au total, %d affichée(s) ci-dessous."
+
+msgid "%d ligne(s)."
+msgstr "%d ligne(s)."
+
+msgid "%s (lié)"
+msgstr "%s (lié)"
+
+msgid "Actif"
+msgstr "Actif"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "Ajouter un critère"
+msgstr "Ajouter un critère"
+
+msgid "Ajouter une colonne"
+msgstr "Ajouter une colonne"
+
+msgid "Aperçu des données"
+msgstr "Aperçu des données"
+
+msgid "Aucun critère : toutes les données du périmètre ci-dessus."
+msgstr "Aucun critère : toutes les données du périmètre ci-dessus."
+
+msgid "Aucune colonne configurée"
+msgstr "Aucune colonne configurée"
+
+msgid "Aucune colonne n'est configurée pour cette ligne."
+msgstr "Aucune colonne n'est configurée pour cette ligne."
+
+msgid "Aucune donnée ne correspond aux critères actuels."
+msgstr "Aucune donnée ne correspond aux critères actuels."
+
+msgid "Champ"
+msgstr "Champ"
+
+msgid "Champ GLPI source"
+msgstr "Champ GLPI source"
+
+msgid ""
+"Choisissez d'abord un type d'objet sur l'onglet principal, puis enregistrez "
+"la ligne."
+msgstr ""
+"Choisissez d'abord un type d'objet sur l'onglet principal, puis enregistrez "
+"la ligne."
+
+msgid "Commentaires"
+msgstr "Commentaires"
+
+msgid "Confirmer la suppression ?"
+msgstr "Confirmer la suppression ?"
+
+msgid "Critères de recherche"
+msgstr "Critères de recherche"
+
+msgid "Deux colonnes ne peuvent pas porter le même nom."
+msgstr "Deux colonnes ne peuvent pas porter le même nom."
+
+msgid "Droit"
+msgstr "Droit"
+
+msgid "Droit mis à jour."
+msgstr "Droit mis à jour."
+
+msgid "Droits par profil - Étiquettes Niimbot"
+msgstr "Droits par profil - Étiquettes Niimbot"
+
+msgid "ET"
+msgstr "ET"
+
+msgid "ET NON"
+msgstr "ET NON"
+
+msgid "Enregistrer les critères"
+msgstr "Enregistrer les critères"
+
+msgid "Enregistrer les modifications"
+msgstr "Enregistrer les modifications"
+
+msgid ""
+"Enregistrez la ligne avec un type d'objet choisi afin de configurer les "
+"critères de recherche et les colonnes du fichier."
+msgstr ""
+"Enregistrez la ligne avec un type d'objet choisi afin de configurer les "
+"critères de recherche et les colonnes du fichier."
+
+msgid "Entité"
+msgstr "Entité"
+
+msgid "Entité racine"
+msgstr "Entité racine"
+
+msgid "Fichier généré avec succès (%d lignes)."
+msgstr "Fichier généré avec succès (%d lignes)."
+
+msgid "Formule (optionnel)"
+msgstr "Formule (optionnel)"
+
+msgid "Hauteur (mm)"
+msgstr "Hauteur (mm)"
+
+msgid "Largeur (mm)"
+msgstr "Largeur (mm)"
+
+msgid "Lien"
+msgstr "Lien"
+
+msgid "Ligne d'export"
+msgstr "Ligne d'export"
+
+msgid "Nom"
+msgstr "Nom"
+
+msgid "Nom de colonne (en-tête Excel)"
+msgstr "Nom de colonne (en-tête Excel)"
+
+msgid "Nom du fichier"
+msgstr "Nom du fichier"
+
+msgid "Non"
+msgstr "Non"
+
+msgid "OU"
+msgstr "OU"
+
+msgid ""
+"Optionnel. Construit la valeur finale à partir de la valeur brute du champ, "
+"repérée par #valeur# (ex: https://exemple.fr/?id=#valeur# pour une URL, ou "
+"=CONCATENER(\"REF-\";#valeur#) pour une formule Excel - toute chaîne "
+"commençant par \"=\" est traitée comme une formule par Excel). Laisser vide "
+"pour utiliser la valeur brute telle quelle."
+msgstr ""
+"Optionnel. Construit la valeur finale à partir de la valeur brute du champ, "
+"repérée par #valeur# (ex: https://exemple.fr/?id=#valeur# pour une URL, ou "
+"=CONCATENER(\"REF-\";#valeur#) pour une formule Excel - toute chaîne "
+"commençant par \"=\" est traitée comme une formule par Excel). Laisser vide "
+"pour utiliser la valeur brute telle quelle."
+
+msgid "Opérateur"
+msgstr "Opérateur"
+
+msgid "Ordre"
+msgstr "Ordre"
+
+msgid "Oui"
+msgstr "Oui"
+
+msgid "Ouvrir"
+msgstr "Ouvrir"
+
+msgid "Sous-entités"
+msgstr "Sous-entités"
+
+msgid "Supprimer"
+msgstr "Supprimer"
+
+msgid "Type d'objet"
+msgstr "Type d'objet"
+
+msgid "Type d'objet invalide : %s"
+msgstr "Type d'objet invalide : %s"
+
+msgid "Type d'objet à exporter"
+msgstr "Type d'objet à exporter"
+
+msgid "Télécharger"
+msgstr "Télécharger"
+
+msgid "Une colonne nommée \"%s\" existe déjà pour cette ligne."
+msgstr "Une colonne nommée \"%s\" existe déjà pour cette ligne."
+
+msgid "Valeur"
+msgstr "Valeur"
+
+msgid "contient"
+msgstr "contient"
+
+msgid "est"
+msgstr "est"
+
+msgid "inférieur à"
+msgstr "inférieur à"
+
+msgid "n'est pas"
+msgstr "n'est pas"
+
+msgid "pas sous"
+msgstr "pas sous"
+
+msgid "sous"
+msgstr "sous"
+
+msgid "supérieur à"
+msgstr "supérieur à"
+
+msgid "Étiquettes Niimbot"
+msgstr "Étiquettes Niimbot"
+
+msgid "Export étiquettes Niimbot"
+msgid_plural "Exports étiquettes Niimbot"
+msgstr[0] "Export étiquettes Niimbot"
+msgstr[1] "Exports étiquettes Niimbot"
+
+msgid "Colonne du fichier Excel"
+msgid_plural "Colonnes du fichier Excel"
+msgstr[0] "Colonne du fichier Excel"
+msgstr[1] "Colonnes du fichier Excel"
+
+msgid "Type d'étiquette Niimbot"
+msgid_plural "Types d'étiquette Niimbot"
+msgstr[0] "Type d'étiquette Niimbot"
+msgstr[1] "Types d'étiquette Niimbot"
+
+msgid "Imprimante Niimbot"
+msgid_plural "Imprimantes Niimbot"
+msgstr[0] "Imprimante Niimbot"
+msgstr[1] "Imprimantes Niimbot"
+
+msgid "Étiquettes Niimbot"
+msgid_plural "Étiquettes Niimbot"
+msgstr[0] "Étiquettes Niimbot"
+msgstr[1] "Étiquettes Niimbot"

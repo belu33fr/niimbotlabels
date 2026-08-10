@@ -112,9 +112,16 @@ l'action) et produit un classeur à deux feuilles :
 ## 5. Traductions
 
 Les chaînes de l'interface sont déclarées via le mécanisme `gettext`
-standard de GLPI (domaine `niimbotlabels`). Une traduction anglaise est
-fournie (`locales/en_GB.mo`, utilisée par GLPI comme langue par défaut
-lorsque la langue active de l'utilisateur n'a pas de traduction dédiée).
+standard de GLPI (domaine `niimbotlabels`). Deux traductions sont fournies :
+
+- `locales/fr_FR.mo` : identique au texte source (français), fournie
+  explicitement car GLPI utilise `en_GB.mo` comme langue de repli pour
+  **toute** langue sans traduction dédiée, y compris le français lui-même
+  en son absence — sans ce fichier, un utilisateur en français se
+  retrouvait avec l'anglais.
+- `locales/en_GB.mo` : traduction anglaise, utilisée aussi comme repli pour
+  toute autre langue sans traduction dédiée.
+
 Pour ajouter/mettre à jour une langue : éditez `locales/<code>.po` (ex :
 `de_DE.po`) avec un outil comme [Poedit](https://poedit.net), puis exportez
 le `.mo` correspondant dans le même dossier.

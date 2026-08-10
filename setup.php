@@ -18,7 +18,7 @@ use GlpiPlugin\Niimbotlabels\LabelType;
 use GlpiPlugin\Niimbotlabels\Printer;
 use GlpiPlugin\Niimbotlabels\ProfileRight;
 
-define('PLUGIN_NIIMBOTLABELS_VERSION', '1.0.1');
+define('PLUGIN_NIIMBOTLABELS_VERSION', '1.0.2');
 
 // Compatibilité annoncée : GLPI 10.0 -> 11.x
 define('PLUGIN_NIIMBOTLABELS_MIN_GLPI_VERSION', '10.0.0');
@@ -95,7 +95,7 @@ function plugin_version_niimbotlabels()
         'version'        => PLUGIN_NIIMBOTLABELS_VERSION,
         'author'         => 'L. Berthaud, Claude (Anthropic)',
         'license'        => 'GPLv2+',
-        'homepage'       => '',
+        'homepage'       => 'https://github.com/belu33fr/niimbotlabels',
         'requirements'   => [
             'glpi' => [
                 'min' => PLUGIN_NIIMBOTLABELS_MIN_GLPI_VERSION,
