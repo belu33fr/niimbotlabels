@@ -18,7 +18,7 @@ use GlpiPlugin\Niimbotlabels\LabelType;
 use GlpiPlugin\Niimbotlabels\Printer;
 use GlpiPlugin\Niimbotlabels\ProfileRight;
 
-define('PLUGIN_NIIMBOTLABELS_VERSION', '1.0.0');
+define('PLUGIN_NIIMBOTLABELS_VERSION', '1.0.1');
 
 // Compatibilité annoncée : GLPI 10.0 -> 11.x
 define('PLUGIN_NIIMBOTLABELS_MIN_GLPI_VERSION', '10.0.0');

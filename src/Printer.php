@@ -30,7 +30,7 @@ class Printer extends CommonDropdown
         return [
             [
                 'name'  => 'comment',
-                'label' => __('Commentaires'),
+                'label' => __('Commentaires', 'niimbotlabels'),
                 'type'  => 'textarea',
             ],
         ];

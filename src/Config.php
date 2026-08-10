@@ -105,13 +105,13 @@ class Config extends CommonDBTM
     public static function getSearchtypeLabels(): array
     {
         return [
-            'contains'  => __('contient'),
-            'equals'    => __('est'),
-            'notequals' => __("n'est pas"),
+            'contains'  => __('contient', 'niimbotlabels'),
+            'equals'    => __('est', 'niimbotlabels'),
+            'notequals' => __("n'est pas", 'niimbotlabels'),
             'under'     => __('sous', 'niimbotlabels'),
             'notunder'  => __('pas sous', 'niimbotlabels'),
-            'morethan'  => __('supérieur à'),
-            'lessthan'  => __('inférieur à'),
+            'morethan'  => __('supérieur à', 'niimbotlabels'),
+            'lessthan'  => __('inférieur à', 'niimbotlabels'),
         ];
     }
 
@@ -173,10 +173,10 @@ class Config extends CommonDBTM
         // si l'entité choisie en a) : inutile de les dupliquer ici.
 
         echo "<tr class='tab_bg_1'>";
-        echo "<td>" . __('Nom') . "</td><td>";
+        echo "<td>" . __('Nom', 'niimbotlabels') . "</td><td>";
         echo Html::input('name', ['value' => $this->fields['name'] ?? '']);
         echo "</td>";
-        echo "<td>" . __('Actif') . "</td><td>";
+        echo "<td>" . __('Actif', 'niimbotlabels') . "</td><td>";
         Html::showCheckbox([
             'name'    => 'is_active',
             'checked' => !isset($this->fields['is_active']) || (bool) $this->fields['is_active'],
@@ -212,7 +212,7 @@ class Config extends CommonDBTM
         echo "</td></tr>";
 
         echo "<tr class='tab_bg_1'>";
-        echo "<td>" . __('Commentaires') . "</td>";
+        echo "<td>" . __('Commentaires', 'niimbotlabels') . "</td>";
         echo "<td colspan='3'>";
         echo "<textarea name='comment' class='form-control' rows='2'>" . Html::entities_deep($this->fields['comment'] ?? '') . "</textarea>";
         echo "</td></tr>";
@@ -267,7 +267,7 @@ class Config extends CommonDBTM
         echo "<table class='tab_cadre_fixe'>";
         echo "<tr><th colspan='5'>" . __('Critères de recherche', 'niimbotlabels')
             . " <small>(" . $itemtype::getTypeName(2) . ")</small></th></tr>";
-        echo "<tr><th>" . __('Lien') . "</th><th>" . __('Champ') . "</th><th>" . __('Opérateur') . "</th><th>" . __('Valeur') . "</th><th></th></tr>";
+        echo "<tr><th>" . __('Lien', 'niimbotlabels') . "</th><th>" . __('Champ', 'niimbotlabels') . "</th><th>" . __('Opérateur', 'niimbotlabels') . "</th><th>" . __('Valeur', 'niimbotlabels') . "</th><th></th></tr>";
 
         echo "<tbody id='niimbotlabels_criteria_rows'>";
         foreach (array_values($criteria) as $i => $row) {
@@ -296,9 +296,9 @@ class Config extends CommonDBTM
         echo "<tr class='niimbotlabels-criteria-row'>";
         echo "<td>";
         Dropdown::showFromArray("crit_link[$index]", [
-            'AND'     => __('ET'),
-            'OR'      => __('OU'),
-            'AND NOT' => __('ET NON'),
+            'AND'     => __('ET', 'niimbotlabels'),
+            'OR'      => __('OU', 'niimbotlabels'),
+            'AND NOT' => __('ET NON', 'niimbotlabels'),
         ], ['value' => $row['link'] ?? 'AND']);
         echo "</td>";
         echo "<td>";
@@ -339,7 +339,7 @@ class Config extends CommonDBTM
             'id'            => 1,
             'table'         => $this->getTable(),
             'field'         => 'name',
-            'name'          => __('Nom'),
+            'name'          => __('Nom', 'niimbotlabels'),
             'datatype'      => 'itemlink',
             'massiveaction' => false,
         ];
@@ -365,7 +365,7 @@ class Config extends CommonDBTM
             'id'       => 4,
             'table'    => $this->getTable(),
             'field'    => 'is_recursive',
-            'name'     => __('Sous-entités'),
+            'name'     => __('Sous-entités', 'niimbotlabels'),
             'datatype' => 'bool',
         ];
 
@@ -426,9 +426,9 @@ class Config extends CommonDBTM
             $id  = (int) $values['id'];
             $url = Toolbox::getItemTypeFormURL(self::class);
 
-            $out = "<a href='$url?id=$id' title='" . __('Ouvrir') . "'><i class='ti ti-pencil'></i></a> ";
+            $out = "<a href='$url?id=$id' title='" . __('Ouvrir', 'niimbotlabels') . "'><i class='ti ti-pencil'></i></a> ";
             $out .= "<a href='$url?id=$id&action=download' title='" . __('Télécharger', 'niimbotlabels') . "'><i class='ti ti-download'></i></a> ";
-            $out .= "<a href='$url?id=$id&action=purge' onclick=\"return confirm('" . __('Confirmer la suppression ?') . "');\" title='" . __('Supprimer') . "'><i class='ti ti-trash'></i></a>";
+            $out .= "<a href='$url?id=$id&action=purge' onclick=\"return confirm('" . __('Confirmer la suppression ?', 'niimbotlabels') . "');\" title='" . __('Supprimer', 'niimbotlabels') . "'><i class='ti ti-trash'></i></a>";
 
             return $out;
         }

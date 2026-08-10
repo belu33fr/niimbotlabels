@@ -437,7 +437,7 @@ class ExcelGenerator
         $row++;
 
         $sheet->setCellValue([1, $row], __('Sous-entités', 'niimbotlabels'));
-        $sheet->setCellValue([2, $row], $config->fields['is_recursive'] ? __('Oui') : __('Non'));
+        $sheet->setCellValue([2, $row], $config->fields['is_recursive'] ? __('Oui', 'niimbotlabels') : __('Non', 'niimbotlabels'));
         $row += 2;
 
         $criteria = $config->getSearchCriteria();
@@ -452,15 +452,15 @@ class ExcelGenerator
             $fields_flat = ConfigColumn::flattenGroupedFields(ConfigColumn::getFieldsForDropdown($itemtype));
             $searchtypes = Config::getSearchtypeLabels();
             $links = [
-                'AND'     => __('ET'),
-                'OR'      => __('OU'),
-                'AND NOT' => __('ET NON'),
+                'AND'     => __('ET', 'niimbotlabels'),
+                'OR'      => __('OU', 'niimbotlabels'),
+                'AND NOT' => __('ET NON', 'niimbotlabels'),
             ];
 
-            $sheet->setCellValue([1, $row], __('Lien'));
-            $sheet->setCellValue([2, $row], __('Champ'));
-            $sheet->setCellValue([3, $row], __('Opérateur'));
-            $sheet->setCellValue([4, $row], __('Valeur'));
+            $sheet->setCellValue([1, $row], __('Lien', 'niimbotlabels'));
+            $sheet->setCellValue([2, $row], __('Champ', 'niimbotlabels'));
+            $sheet->setCellValue([3, $row], __('Opérateur', 'niimbotlabels'));
+            $sheet->setCellValue([4, $row], __('Valeur', 'niimbotlabels'));
             $row++;
 
             foreach ($criteria as $index => $criterion) {

@@ -1,0 +1,238 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: niimbotlabels\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-10 00:00+0000\n"
+"PO-Revision-Date: 2026-08-10 00:00+0000\n"
+"Last-Translator: L. Berthaud et Claude\n"
+"Language-Team: English\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "%d ligne(s) au total, %d affichée(s) ci-dessous."
+msgstr "%d row(s) in total, %d shown below."
+
+msgid "%d ligne(s)."
+msgstr "%d row(s)."
+
+msgid "%s (lié)"
+msgstr "%s (related)"
+
+msgid "Actif"
+msgstr "Active"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "Ajouter un critère"
+msgstr "Add a criterion"
+
+msgid "Ajouter une colonne"
+msgstr "Add a column"
+
+msgid "Aperçu des données"
+msgstr "Data preview"
+
+msgid "Aucun critère : toutes les données du périmètre ci-dessus."
+msgstr "No criteria: all data within the scope above."
+
+msgid "Aucune colonne configurée"
+msgstr "No column configured"
+
+msgid "Aucune colonne n'est configurée pour cette ligne."
+msgstr "No column is configured for this line."
+
+msgid "Aucune donnée ne correspond aux critères actuels."
+msgstr "No data matches the current criteria."
+
+msgid "Champ"
+msgstr "Field"
+
+msgid "Champ GLPI source"
+msgstr "Source GLPI field"
+
+msgid ""
+"Choisissez d'abord un type d'objet sur l'onglet principal, puis enregistrez "
+"la ligne."
+msgstr "First choose an object type on the main tab, then save the line."
+
+msgid "Commentaires"
+msgstr "Comments"
+
+msgid "Confirmer la suppression ?"
+msgstr "Confirm deletion?"
+
+msgid "Critères de recherche"
+msgstr "Search criteria"
+
+msgid "Deux colonnes ne peuvent pas porter le même nom."
+msgstr "Two columns cannot have the same name."
+
+msgid "Droit"
+msgstr "Right"
+
+msgid "Droit mis à jour."
+msgstr "Right updated."
+
+msgid "Droits par profil - Étiquettes Niimbot"
+msgstr "Profile rights - Niimbot Labels"
+
+msgid "ET"
+msgstr "AND"
+
+msgid "ET NON"
+msgstr "AND NOT"
+
+msgid "Enregistrer les critères"
+msgstr "Save criteria"
+
+msgid "Enregistrer les modifications"
+msgstr "Save changes"
+
+msgid ""
+"Enregistrez la ligne avec un type d'objet choisi afin de configurer les "
+"critères de recherche et les colonnes du fichier."
+msgstr ""
+"Save the line with a chosen object type in order to configure the search "
+"criteria and file columns."
+
+msgid "Entité"
+msgstr "Entity"
+
+msgid "Entité racine"
+msgstr "Root entity"
+
+msgid "Fichier généré avec succès (%d lignes)."
+msgstr "File generated successfully (%d rows)."
+
+msgid "Formule (optionnel)"
+msgstr "Formula (optional)"
+
+msgid "Hauteur (mm)"
+msgstr "Height (mm)"
+
+msgid "Largeur (mm)"
+msgstr "Width (mm)"
+
+msgid "Lien"
+msgstr "Link"
+
+msgid "Ligne d'export"
+msgstr "Export line"
+
+msgid "Nom"
+msgstr "Name"
+
+msgid "Nom de colonne (en-tête Excel)"
+msgstr "Column name (Excel header)"
+
+msgid "Nom du fichier"
+msgstr "File name"
+
+msgid "Non"
+msgstr "No"
+
+msgid "OU"
+msgstr "OR"
+
+msgid ""
+"Optionnel. Construit la valeur finale à partir de la valeur brute du champ, "
+"repérée par #valeur# (ex: https://exemple.fr/?id=#valeur# pour une URL, ou "
+"=CONCATENER(\"REF-\";#valeur#) pour une formule Excel - toute chaîne "
+"commençant par \"=\" est traitée comme une formule par Excel). Laisser vide "
+"pour utiliser la valeur brute telle quelle."
+msgstr ""
+"Optional. Builds the final value from the raw field value, referenced by "
+"#valeur# (e.g. https://example.com/?id=#valeur# for a URL, or "
+"=CONCATENATE(\"REF-\";#valeur#) for an Excel formula - any string starting "
+"with \"=\" is treated by Excel as a formula). Leave empty to use the raw "
+"value as is."
+
+msgid "Opérateur"
+msgstr "Operator"
+
+msgid "Ordre"
+msgstr "Order"
+
+msgid "Oui"
+msgstr "Yes"
+
+msgid "Ouvrir"
+msgstr "Open"
+
+msgid "Sous-entités"
+msgstr "Sub-entities"
+
+msgid "Supprimer"
+msgstr "Delete"
+
+msgid "Type d'objet"
+msgstr "Object type"
+
+msgid "Type d'objet invalide : %s"
+msgstr "Invalid object type: %s"
+
+msgid "Type d'objet à exporter"
+msgstr "Object type to export"
+
+msgid "Télécharger"
+msgstr "Download"
+
+msgid "Une colonne nommée \"%s\" existe déjà pour cette ligne."
+msgstr "A column named \"%s\" already exists for this line."
+
+msgid "Valeur"
+msgstr "Value"
+
+msgid "contient"
+msgstr "contains"
+
+msgid "est"
+msgstr "is"
+
+msgid "inférieur à"
+msgstr "less than"
+
+msgid "n'est pas"
+msgstr "is not"
+
+msgid "pas sous"
+msgstr "not under"
+
+msgid "sous"
+msgstr "under"
+
+msgid "supérieur à"
+msgstr "greater than"
+
+msgid "Étiquettes Niimbot"
+msgstr "Niimbot Labels"
+
+msgid "Export étiquettes Niimbot"
+msgid_plural "Exports étiquettes Niimbot"
+msgstr[0] "Niimbot label export"
+msgstr[1] "Niimbot label exports"
+
+msgid "Colonne du fichier Excel"
+msgid_plural "Colonnes du fichier Excel"
+msgstr[0] "Excel file column"
+msgstr[1] "Excel file columns"
+
+msgid "Type d'étiquette Niimbot"
+msgid_plural "Types d'étiquette Niimbot"
+msgstr[0] "Niimbot label type"
+msgstr[1] "Niimbot label types"
+
+msgid "Imprimante Niimbot"
+msgid_plural "Imprimantes Niimbot"
+msgstr[0] "Niimbot printer"
+msgstr[1] "Niimbot printers"
+
+msgid "Étiquettes Niimbot"
+msgid_plural "Étiquettes Niimbot"
+msgstr[0] "Niimbot Labels"
+msgstr[1] "Niimbot Labels"

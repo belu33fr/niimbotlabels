@@ -170,7 +170,7 @@ class ConfigColumn extends CommonDBTM
                 ]) . "</td>";
                 echo "<td>";
                 echo "<a href='$form_url?id=$configs_id&action=delete_column&column_id=$cid' "
-                    . "onclick=\"return confirm('" . __('Confirmer la suppression ?') . "');\">"
+                    . "onclick=\"return confirm('" . __('Confirmer la suppression ?', 'niimbotlabels') . "');\">"
                     . "<i class='ti ti-trash'></i></a>";
                 echo "</td>";
                 echo "</tr>";
