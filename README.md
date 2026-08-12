@@ -8,9 +8,20 @@ aucun stockage intermédiaire dans le module Documents de GLPI.
 
 ## 1. Installation
 
-1. Copiez (ou décompressez le zip fourni) le contenu du plugin dans
-   `plugins/niimbotlabels/` de votre installation GLPI (10.0 ou 11.x), de
-   sorte à obtenir `plugins/niimbotlabels/setup.php`.
+Deux façons d'obtenir le plugin, avec une différence importante :
+
+- **Zip de la page "Releases" du dépôt GitHub** (recommandé) : contient déjà
+  le dossier `vendor/` (dépendances PHP incluses). Aucun `composer` requis
+  sur le serveur GLPI.
+- **Code source seul** (clone du dépôt, ou zip généré automatiquement par
+  GitHub sur "Code > Download ZIP") : ne contient pas `vendor/`, il faut
+  impérativement exécuter `composer install` (voir ci-dessous) avant
+  activation, sinon le plugin refuse de s'activer.
+
+Étapes :
+
+1. Décompressez le zip dans `plugins/` de votre installation GLPI (10.0 ou
+   11.x), de sorte à obtenir `plugins/niimbotlabels/setup.php`.
 2. En étant dans le répertoire `plugins/`, exécutez ce qui suit (pensez à
    remplacer `www-data` par l'utilisateur/groupe sous lequel tourne votre
    serveur web, si différent) :
@@ -19,14 +30,18 @@ aucun stockage intermédiaire dans le module Documents de GLPI.
    sudo chown -R www-data:www-data niimbotlabels/
    sudo find niimbotlabels/ -type f -exec chmod 644 {} \;
    sudo find niimbotlabels/ -type d -exec chmod 755 {} \;
-   sudo -u www-data composer install --no-dev -d niimbotlabels/
    sudo systemctl restart apache2
    ```
 
-   L'étape `composer install` (dépendance Excel PhpSpreadsheet) est
-   indispensable : sans elle, le plugin refuse de s'activer (message
-   explicite affiché dans la liste des plugins). Si vous mettez à jour une
-   installation existante, videz aussi le cache GLPI avant ces commandes :
+   **Seulement si vous êtes partis du code source (pas du zip "Releases")**,
+   ajoutez avant le redémarrage d'Apache :
+
+   ```bash
+   sudo -u www-data composer install --no-dev -d niimbotlabels/
+   ```
+
+   Si vous mettez à jour une installation existante, videz aussi le cache
+   GLPI avant ces commandes :
    `sudo rm -rf /var/glpi/files/_cache/<version-de-votre-cache>/*` (le nom
    exact du sous-dossier dépend de votre instance, visible dans
    `files/_cache/`).
